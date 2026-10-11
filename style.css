@@ -1,0 +1,251 @@
+/* Tokens (from Figma paint styles) */
+:root{
+  --dark-01:#1c1c1c; --dark-02:#494949; --dark-03:#777; --dark-05:#d2d2d2; --dark-07:#f4f4f4;
+  --white:#fff;
+  --grad:linear-gradient(to left,#f00,#ff8938);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',sans-serif;color:var(--dark-01);background:#fff;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+img{display:block}
+.container{width:min(1140px,100% - 40px);margin-inline:auto;position:relative}
+.section{padding-top:130px}
+.title{font-size:45px;font-weight:800;line-height:normal}
+.lead{font-size:16px;font-weight:500;line-height:28px;color:var(--dark-03)}
+.center{text-align:center}
+.center>.lead{max-width:901px;margin:20px auto 0}
+.crop{position:absolute;overflow:hidden}
+.crop img{position:absolute;max-width:none}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-size:20px;font-weight:700;color:#fff;background:var(--grad)}
+.btn-lg{width:200px;height:64px;border-radius:10px}
+.btn-sm{width:164px;height:56px;border-radius:8px}
+
+/* Hero */
+.hero-banner{position:absolute;left:641px;top:121px;width:655px;height:499px;object-fit:contain}
+.hero h1{font-size:80px;font-weight:800;line-height:100px;width:628px}
+.hero-text p{font-size:18px;font-weight:500;line-height:30px;color:var(--dark-03);width:513px;margin:30px 0}
+.hero-art{position:absolute;inset:0;pointer-events:none}
+.hero-img{position:absolute;top:156.4px;height:428.13px;border:1px solid #000}
+.hero-img-1{left:691.5px;width:264.46px;transform:rotate(-14.86deg)}
+.hero-img-1 img{width:100%;height:100%;object-fit:cover}
+.hero-img-2{left:955.9px;width:262.61px;transform:rotate(24.73deg);overflow:hidden}
+.crop-hero{inset:0}
+.crop-hero img{height:234.66%;width:516.74%;left:-260.94%;top:-123.02%}
+.rating{position:absolute;left:722px;top:508px;width:255px;height:100px;background:#fff;border-radius:10px;box-shadow:0 7px 50px rgba(0,0,0,.06)}
+.rating .star{position:absolute;left:27px;top:28px}
+.rating-text{position:absolute;left:88px;top:19px}
+.rating-text strong{display:block;font-size:30px;font-weight:800;line-height:41px}
+.rating-text span{display:block;font-size:16px;font-weight:600;line-height:22px;color:var(--dark-03)}
+
+/* Products */
+.cards4{display:grid;grid-template-columns:repeat(4,267px);gap:24px;margin-top:50px;justify-content:center}
+.product{height:391px;padding-top:30px;border-radius:10px;background:linear-gradient(180deg,#f4f4f4,rgba(244,244,244,0))}
+.product img{height:212px;margin:0 auto;object-fit:cover}
+.product h3{font-size:25px;font-weight:800;margin-top:30px}
+.product p{width:208px;margin:10px auto 0;font-size:16px;font-weight:600;color:var(--dark-03)}
+
+/* About */
+.about{display:flex;gap:52px}
+.collage{position:relative;width:506px;height:521px;flex:none}
+.tile{position:absolute;width:238px;border-radius:10px}
+.t-pink{left:0;top:0;height:136px;background:linear-gradient(to right,rgba(255,0,0,.1),rgba(255,137,56,.1))}
+.t-green{left:0;top:166px;height:355px;background:rgba(87,118,57,.1)}
+.t-yellow{left:268px;top:0;height:355px;background:rgba(230,166,35,.1)}
+.t-gray{left:268px;top:385px;height:136px;background:linear-gradient(to right,#d9d9d9,rgba(255,255,255,0))}
+.cup{position:absolute;object-fit:contain}
+.cup-green{left:46px;top:39px;width:146px;height:273px}
+.cup-yellow{left:31px;top:58px;width:177px;height:266px}
+.about-text{width:582px}
+.about-text .title{width:413px}
+.about-text>.lead{margin-top:20px}
+.feature{margin-top:30px;width:458px}
+.feature+.feature{margin-top:20px}
+.feature h3{font-size:20px;font-weight:800}
+.feature .lead{margin-top:10px}
+
+/* Clients / CTA block */
+.cta{position:relative;height:650px;border-radius:10px;background:var(--grad);overflow:hidden}
+.cta-deco{position:absolute;left:170px;top:314px}
+.cta-text{position:absolute;left:70px;top:155px;width:440px}
+.cta-text .title{width:389px;color:var(--dark-07)}
+.cta-text .lead{margin-top:20px;color:var(--dark-07)}
+.btn-show{display:flex;align-items:center;justify-content:center;width:139px;height:56px;margin-top:30px;border-radius:8px;background:#fff;font-size:20px;font-weight:700}
+.btn-show span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.quotes{position:absolute;left:546px;top:85px;width:524px;height:480px}
+.q-ghost{position:absolute;left:130px;width:394px;height:220px}
+.q-ghost>*{opacity:.3}
+.q-ghost .q-card{position:absolute;left:18px;top:18px;width:376px;height:202px;background:#fff;border-radius:6.947px}
+.q-ghost p{position:absolute;left:61.4px;font-family:'Plus Jakarta Sans',sans-serif;font-size:13.895px;line-height:24.316px;color:#5d5a6f}
+.q-ghost .q-text{top:53.5px;width:296px}
+.q-ghost .q-name{top:143.7px;font-weight:700;color:#101724}
+.q-ghost .q-role{top:169.7px}
+.q-ghost .ring{position:absolute;left:0;top:0}
+.q-ghost .photo{position:absolute;left:3.2px;top:3.2px}
+.q-main{position:absolute;left:0;top:113px;width:454px;height:254px}
+.q-main .q-card{position:absolute;left:21px;top:21px;width:433px;height:233px;background:#fff;border-radius:8px}
+.q-main p{position:absolute;left:71px;font-size:16px;line-height:28px}
+.q-main .q-text{top:62px;width:341px;font-weight:400;color:var(--dark-03)}
+.q-main .q-name{top:166px;font-weight:700;color:var(--dark-01)}
+.q-main .q-role{top:194px;font-weight:500;color:#5d5a6f}
+.q-main .ring{position:absolute;left:0;top:0}
+.q-main .photo{position:absolute;left:4px;top:4px}
+.q-main .q-icon{position:absolute;left:404px;top:206px}
+
+/* News */
+.cards3{display:grid;grid-template-columns:repeat(3,364px);gap:24px;margin-top:50px;justify-content:center;text-align:left}
+.news{height:448px;padding:20px 21px;border:1px solid var(--dark-05);border-radius:10px}
+.thumb{position:relative;width:320px;height:190px;border-radius:10px;overflow:hidden}
+.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.thumb-crop img{height:112.25%;top:-2.81%}
+.news-body{padding:0 0 0 10px;width:320px}
+.date{display:block;margin-top:20px;font-size:16px;font-weight:500;line-height:28px;color:var(--dark-03)}
+.news h3{width:225px;margin-top:10px;font-size:20px;font-weight:800}
+.news p{margin-top:10px;font-size:16px;font-weight:500;line-height:28px;color:var(--dark-03)}
+.news a{display:block;margin-top:10px;font-size:16px;font-weight:700;line-height:28px}
+
+/* Footer */
+.footer{margin-top:130px;padding:130px 0;background:linear-gradient(to left,rgba(255,0,0,.1),rgba(255,137,56,.1))}
+.foot-top{display:flex;justify-content:space-between;align-items:center}
+.foot-cta{display:flex;align-items:center;gap:40px;margin-right:65px}
+.foot-cta p{font-size:20px;font-weight:500;line-height:40px;color:var(--dark-02)}
+.divider{width:100%;height:1px;margin-top:54px}
+.foot-cols{display:flex;gap:172px;margin-top:50px}
+.footer h4{font-size:20px;font-weight:600}
+.footer ul{margin-top:22px}
+.footer li{font-size:16px;font-weight:400;line-height:22px;color:var(--dark-02)}
+.footer li+li{margin-top:18px}
+.newsletter-col{width:305px}
+.newsletter-col h4{width:216px;font-size:24px;line-height:40px}
+.newsletter{position:relative;width:305px;height:48px;margin-top:20px}
+.newsletter input{width:273px;height:32px;padding:7px 0 0;border:0;outline:0;background:none;font:400 14px 'Plus Jakarta Sans',sans-serif;color:var(--dark-02)}
+.newsletter input::placeholder{color:var(--dark-02)}
+.newsletter .line{position:absolute;left:0;top:48px}
+.newsletter button{position:absolute;right:0;top:0;width:32px;height:32px;border:0;background:none;cursor:pointer}
+.social{display:flex;gap:24px;margin-top:48px}
+.copy{margin-top:60px;text-align:center;font-size:16px;font-weight:500;color:var(--dark-02)}
+
+/* Responsive (the Figma frame is 1600px desktop; these keep it usable below that) */
+/* ===== Responsive =====
+   1201+ large desktops | 1025-1200 laptops | 768-1024 tablets | up to 767 phones */
+
+/* --- Large desktops, narrow end (1201-1451): keep the design, stop the banner clipping --- */
+@media (min-width:1201px) and (max-width:1451px){
+  .hero h1{font-size:clamp(64px,6vw,80px);width:7.85em}
+  .hero-art{inset:auto;top:121px;right:calc((1140px - 100vw)/2 + 20px);width:clamp(500px,46vw,655px)}
+  .hero-banner{position:static;width:100%;height:auto}
+  .rating{left:12%;top:auto;bottom:12px}
+}
+
+/* --- Laptops and smaller (max 1200): fluid layout --- */
+@media (max-width:1200px){
+  .section{padding-top:100px}
+  .title{font-size:40px}
+
+  .hero{height:auto;display:flex;align-items:center;gap:30px;padding:60px 0 50px}
+  .hero h1{width:auto;font-size:60px;line-height:76px}
+  .hero-text{flex:1;min-width:0}
+  .hero-text p{width:auto;max-width:513px}
+  .hero-art{position:relative;inset:auto;flex:0 0 46%;pointer-events:auto}
+  .hero-banner{position:static;width:100%;height:auto}
+  .rating{left:8%;top:auto;bottom:-30px}
+
+  .cards4{grid-template-columns:repeat(4,1fr);gap:20px}
+  .product p{width:auto;padding:0 12px}
+
+  .about{gap:40px}
+  .about-text{flex:1;width:auto;min-width:0}
+  .about-text .title,.feature{width:auto}
+
+  .cta{height:auto;display:flex;align-items:center;gap:40px;padding:60px 50px}
+  .cta-deco,.q-ghost{display:none}
+  .cta-text{position:static;flex:1;width:auto;min-width:0}
+  .cta-text .title{width:auto}
+  .quotes{position:relative;left:auto;top:auto;flex:none;width:454px;height:254px}
+  .q-main{top:0}
+
+  .cards3{grid-template-columns:repeat(3,1fr);gap:20px}
+  .news{height:auto}
+  .thumb{width:100%}
+  .news-body,.news h3{width:auto}
+
+  .footer{margin-top:100px;padding:100px 0}
+  .foot-cols{gap:60px}
+  .foot-cta{margin-right:0}
+}
+
+/* --- Tablets and smaller (max 1024): stacked layout --- */
+@media (max-width:1024px){
+  .section{padding-top:80px}
+  .title{font-size:36px}
+
+  .hero{flex-direction:column;align-items:flex-start;gap:20px;padding:40px 0 50px}
+  .hero h1{font-size:52px;line-height:64px}
+  .hero-art{flex:none;width:100%;max-width:655px;margin:0 auto}
+  .rating{left:5%;bottom:-40px}
+
+  .cards4{grid-template-columns:repeat(2,1fr)}
+
+  .about{flex-direction:column;align-items:center}
+  .about-text{width:100%}
+  .collage{width:100%;max-width:506px;height:auto;aspect-ratio:506/521}
+  .tile{width:47.04%}
+  .t-pink{height:26.1%}
+  .t-green{top:31.86%;height:68.14%}
+  .t-yellow{left:52.96%;height:68.14%}
+  .t-gray{left:52.96%;top:73.9%;height:26.1%}
+  .cup-green{left:19.33%;top:10.99%;width:61.34%;height:76.9%}
+  .cup-yellow{left:13.03%;top:16.34%;width:74.37%;height:74.93%}
+
+  .cta{flex-direction:column;align-items:flex-start;padding:50px 40px}
+  .cta-text{width:100%}
+  .quotes{width:100%;max-width:454px;height:auto}
+  .q-main{position:relative;width:100%;height:auto;margin-top:36px;padding:52px 24px 24px;background:#fff;border-radius:8px}
+  .q-main .q-card{display:none}
+  .q-main .q-text,.q-main .q-name,.q-main .q-role{position:static;width:auto}
+  .q-main .q-name{margin-top:16px}
+  .q-main .ring{left:-10px;top:-26px}
+  .q-main .photo{left:-6px;top:-22px}
+  .q-main .q-icon{left:auto;top:auto;right:20px;bottom:20px}
+
+  .cards3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+
+  .foot-cols{flex-wrap:wrap;gap:40px 60px}
+}
+
+/* --- Phones (max 767) --- */
+@media (max-width:767px){
+  .section{padding-top:60px}
+  .title{font-size:30px}
+  .lead{font-size:15px}
+
+  .hero h1{font-size:40px;line-height:50px}
+  .hero-text p{font-size:16px;line-height:26px}
+  .btn-lg{width:180px;height:56px;font-size:18px}
+
+  .cards4{grid-template-columns:1fr;max-width:360px;margin-inline:auto}
+  .cta{padding:40px 24px}
+  .cards3{grid-template-columns:1fr}
+
+  .footer{margin-top:60px;padding:60px 0}
+  .foot-top{flex-direction:column;align-items:flex-start;gap:24px}
+  .foot-cta{flex-direction:column;align-items:flex-start;gap:16px}
+  .newsletter-col{width:100%;max-width:305px}
+  .newsletter{width:100%}
+  .newsletter input{width:calc(100% - 40px)}
+  .newsletter .line{width:calc(100% - 32px)}
+  .copy{font-size:14px}
+}
+
+/* Added with the HTML rewrite */
+.q-ghost-1{top:0}
+.q-ghost-2{top:260px}
+figure,blockquote{margin:0}
+.q-ghost blockquote,.q-main blockquote{position:absolute}
+.q-main figcaption{display:contents}
+.date{display:block}
+.q-ghost blockquote{left:61.4px;font-family:'Plus Jakarta Sans',sans-serif;font-size:13.895px;line-height:24.316px;color:#5d5a6f}
+.q-main blockquote{left:71px;font-size:16px;line-height:28px}
